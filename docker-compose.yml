@@ -1,4 +1,4 @@
-version: '3.7'
+version: '3'
 services:
   docker_practice:
     build: .
@@ -6,4 +6,4 @@ services:
       - .:/code
     ports:
       - "8000:8000"
-    command: python manage.py runserver
+    command: python manage.py runserver 0.0.0.0:8000
